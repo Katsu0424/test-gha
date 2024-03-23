@@ -12,5 +12,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Run a one-line script
+      - name: Secrets
         run: echo secret ${{ secrets.TEST_ENV_KEY }}
+
+      - name: Variables
+        run: echo secret ${{ vars.TEST_VARIABLES }}
