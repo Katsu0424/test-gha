@@ -6,6 +6,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    environment:
+      name: TEST-ENV
+      url: https://google.com
     steps:
       - uses: actions/checkout@v3
 
